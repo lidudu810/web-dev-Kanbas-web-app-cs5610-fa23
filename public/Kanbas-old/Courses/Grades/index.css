@@ -1,0 +1,15 @@
+.wd-button-size {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap; 
+}
+.wd-button-size {
+    min-width: 80px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
