@@ -2,6 +2,9 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import { SlOptionsVertical } from "react-icons/sl";
+import { Provider } from "react-redux";
+
+
 
 function Assignments() {
   const { courseId } = useParams();
@@ -15,7 +18,7 @@ function Assignments() {
         <div className="col" style={{ textAlign: 'left' }}><input title="Type the name of the assignments to search for" placeholder="Search for Assignments" /></div>
         <div className="col" style={{ display: 'flex', justifyContent: 'flex-end' }}>
           <button className="wd-button">+Group</button>
-          <button className="wd-button" style={{ backgroundColor: 'red', color: 'white' }}>+ Assignment</button>
+          <Link to={'/Kanbas/Courses/RS101/Assignments/A101'} className="btn btn-danger">+ Assignment</Link>
           <button className="wd-button"><SlOptionsVertical /></button>
         </div>
       </div>

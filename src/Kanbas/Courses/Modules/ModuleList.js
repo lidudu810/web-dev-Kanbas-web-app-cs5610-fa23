@@ -1,47 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
-import "./index.css";
-import { SlOptionsVertical } from "react-icons/sl";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modules = db.modules;
+  
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
+
   return (
-    <div>
-      <button className="wd-button">Collapse All</button>
-      <button className="wd-button">view Progress</button>
-      <button className="wd-button">Publish All</button>
-      <button className="wd-button" style={{ backgroundColor: 'red', color: 'white' }}>+ Modules</button>
-      <button className="wd-button"><SlOptionsVertical /></button>
-      <hr />
     <ul className="list-group">
-      {
-        modules
-         .filter((module) => module.course === courseId)
-         .map((module, index) => (
-           <li key={index} className="list-group-item">
-             <h3>{module.name}</h3>
-             <p>{module.description}</p>
-             {
-                module.lessons && (
-                    <ul className="list-group">
-                        {
-                            module.lessons.map((lesson, index) => (
-                                <li key={index} className="list-group-item">
-                                    <h4>{lesson.name}</h4>
-                                    <p>{lesson.description}</p>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                )
-             }
-           </li>
-      ))
-      }
+      <li className="list-group-item">
+        <div className="float-end">
+        <button class="btn btn-primary" 
+        onClick={() => dispatch(updateModule(module))}>
+                Update
+        </button>
+        <button class="btn btn-success"
+        onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+          Add</button>
+        </div>
+        <div className="float-start">
+        <div>
+        <input value={module.name}
+          onChange={(e) =>
+            dispatch(setModule({ ...module, name: e.target.value }))
+          }/>
+          </div>
+        <div>
+        <textarea value={module.description}
+          onChange={(e) =>
+            dispatch(setModule({ ...module, description: e.target.value }))
+          }/>
+          </div>
+        </div>
+      </li>
+      {modules
+        .filter((module) => module.course === courseId)
+        .map((module, index) => (
+          <li key={index} className="list-group-item">
+            <div className="float-end">
+            <button class="btn btn-danger"
+              onClick={() => dispatch(deleteModule(module._id))}>
+              Delete
+            </button>
+            <button class="btn btn-success"
+              onClick={() => dispatch(setModule(module))}>
+              Edit
+            </button>
+            </div>
+            <h3>{module.name}</h3>
+            <p>{module.description}</p>
+            <p>{module._id}</p>
+          </li>))}
     </ul>
-    </div>
   );
 }
 export default ModuleList;
