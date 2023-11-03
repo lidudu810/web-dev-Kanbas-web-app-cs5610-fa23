@@ -1,8 +1,6 @@
-import db from "../Database";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
 import React from "react";
-import JsonPre from "../../Labs/a3/JsonPre";
 import Modules from "./Modules";  
 import { FaBars } from "react-icons/fa";
 import Home from "./Home";
@@ -15,7 +13,7 @@ function Courses({ courses }) {
   const course = courses.find((course) => course._id === courseId);
   return (
     <div>
-      <FaBars color="red" /><a style={{ color: 'red' }}>{course.name}</ a>
+      <a href style={{ color: 'red' }}> <FaBars color="red" /> {course.name} </ a>
       <hr />
 
       <CourseNavigation />

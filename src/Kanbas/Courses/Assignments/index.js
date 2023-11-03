@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import { SlOptionsVertical } from "react-icons/sl";
-import { Provider } from "react-redux";
 
 
 
