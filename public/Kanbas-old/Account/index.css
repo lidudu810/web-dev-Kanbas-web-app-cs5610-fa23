@@ -1,0 +1,43 @@
+.wd-account-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 190px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+} 
+.wd-account-navigation li {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.wd-account-navigation li.wd-active{
+    border-left: 1px solid black;
+}
+.wd-account-navigation li.wd-active a{
+   color: black;
+}
+
+.wd-account-navigation a {
+    color: red;
+    text-decoration: none;
+}
+
+.buttonsaveprofile {
+    background-color: red;
+    border: none;
+    color: white;
+    float: right;
+}
+.buttonCancel {
+    border: none;
+    float: right;
+}
+
+ button {
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 8px 10px;
+}

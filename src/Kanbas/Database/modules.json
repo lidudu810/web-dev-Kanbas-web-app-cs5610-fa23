@@ -1,0 +1,74 @@
+[
+    {
+      "_id": "M101",
+      "name": "Resources",
+      "description": "Learning Obectives and Resources for the Rocket Science 101 course.",
+      "course": "RS101"
+    },
+    {
+      "_id": "M102",
+      "name": "Required Textbook",
+      "description": "Full Stack Developer - Chapter 1 - Introduction.",
+      "course": "RS101"
+    },
+    {
+      "_id": "M103",
+      "name": "Week 0 - INTRO",
+      "description": "Learn what is Web Development.",
+      "course": "RS101"
+    },
+    {
+      "_id": "M201",
+      "name": "Week 1 - HTML",
+      "description": "Getting started with the 1st assignment.",
+      "course": "RS101"
+    },
+    {
+      "_id": "M101",
+      "name": "Resources",
+      "description": "Learning Obectives and Resources for the Rocket Science 101 course.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M102",
+      "name": "Required Textbook",
+      "description": "Full Stack Developer - Chapter 1 - Introduction.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M103",
+      "name": "Week 0 - INTRO",
+      "description": "Learn what is Web Development.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M201",
+      "name": "Week 1 - HTML",
+      "description": "Getting started with the 1st assignment.",
+      "course": "RS102"
+    },
+    {
+      "_id": "M101",
+      "name": "Resources",
+      "description": "Learning Obectives and Resources for the Rocket Science 101 course.",
+      "course": "RS103"
+    },
+    {
+      "_id": "M102",
+      "name": "Required Textbook",
+      "description": "Full Stack Developer - Chapter 1 - Introduction.",
+      "course": "RS103"
+    },
+    {
+      "_id": "M103",
+      "name": "Week 0 - INTRO",
+      "description": "Learn what is Web Development.",
+      "course": "RS103"
+    },
+    {
+      "_id": "M201",
+      "name": "Week 1 - HTML",
+      "description": "Getting started with the 1st assignment.",
+      "course": "RS103"
+    }
+  ]

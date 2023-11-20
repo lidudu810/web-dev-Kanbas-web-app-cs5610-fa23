@@ -1,0 +1,25 @@
+.wd-modules-list {
+  /* list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 120px;
+  border-radius: 0px;
+  border: none; */
+  background-color: gainsboro;
+}
+
+.wd-button {
+  /* background-color: gainsboro; */
+  border: none;
+  color: black;
+  padding: 5px 12px;
+  margin: 0px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 0px;
+}
