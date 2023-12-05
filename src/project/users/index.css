@@ -1,0 +1,7 @@
+.list-group-item a.active {
+    /* Active state styling */
+    color: #fff; /* white text for active link */
+    background-color: #007bff; /* blue background for active link */
+    border-color: #007bff; /* blue border for active link */
+  }
+  
