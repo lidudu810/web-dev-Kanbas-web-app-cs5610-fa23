@@ -1,19 +1,21 @@
 
   
-  .list-group-item a.active {
+  .wd-list-group-item a.active {
+    color: #fff; 
+  }
+  
+  .wd-list-group-item a.active {
+    background-color: #007bff; 
+
+  }
+
+  /* .wd-list-group-item a.active {
     color: #fff; 
     background-color: #007bff; 
     border-color: #007bff; 
+  } */
+
+  wd-active {
+    color: #fff; 
+    background-color: #007bff; 
   }
-  
-  .list-group-item a.active {
-    /* Active state styling */
-    color: #fff; /* white text for active link */
-    background-color: #007bff; /* blue background for active link */
-    border-color: #007bff; /* blue border for active link */
-  }
-  .button {
-    background-color: #007bff;    
-    color: white;                            
-    text-align: center; 
-    }

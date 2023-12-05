@@ -15,14 +15,13 @@ import UserTable from "./users/table";
 
 function Project() {
   const [key, setKey] = useState("home");
-
   return (
     <div className="container-fluid">
       <h1>Project</h1>
       <div className="row">
         <div className="col-2">
           <div className="list-group">
-            <Link to="/project/" className="list-group-item">
+            <Link to="/project/" className="list-group-item" class="">
               Home
             </Link>
             <Link to="/project/signup" className="list-group-item">
